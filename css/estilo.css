@@ -161,6 +161,29 @@
     transform: translateX(0); /* Animar a su posición original */
   }
 
+/* ocultamos las cards que salen por abajo*/
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.contenedorCards {
+  opacity: 0; /* Ocultar inicialmente */
+  transform: translateY(100%); /* Posicionar fuera de la vista inicialmente */
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.contenedorCards.show {
+  opacity: 1; /* Mostrar cuando se agrega la clase 'show' */
+  transform: translateY(0); /* Animar a su posición original */
+}
+
 
   /*ocultar la clase repetida*/
 

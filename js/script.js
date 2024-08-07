@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
 /*codigo efecto entrada con scroll para las cards de pagina2.html*/
 document.addEventListener('DOMContentLoaded', function () {
     function handleScroll() {
-      const elements = document.querySelectorAll('.cardEspecial1');
+      const elements = document.querySelectorAll('.cardEspecial1, .contenedorCards');
       /*repetimos codigo para efecto por la derecha*/
       const elements2=document.querySelectorAll('.cardEspecial2');
       const windowHeight = window.innerHeight;

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    
+    <link rel="stylesheet" href="../css/styleSlide.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!--
+    <header>
+        <nav>
+            <a href="#" class="active">INICIO</a>
+            <a href="#">QUE VER</a>
+            <a href="#">HISTORIA</a>
+            <a href="#">COMO LLEGAR</a>
+            <a href="#">UBICACION</a>
+        </nav>
+    </header>
+
+-->
+
+<div class="container-fluid sticky-top bg-dark">
+    <!--nueva barra con boton movil-->
+    <div class="row">            
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fw-bold">
+            <div class="container-fluid">
+             <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" width="60px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-dark text-white dropdown-toggle fw-bold" data-bs-toggle="dropdown">
+                      DESCUBRE
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../pag/pagina2.html">CULTURA</a></li>
+                      <li><a class="dropdown-item" href="../pag/pagina3.html">INFORMACION</a></li>
+                      <li><a class="dropdown-item" href="../pag/pagina4.html">Gastronomia</a></li>
+                      <li><a class="dropdown-item" href="../pag/pruebaVideo360.html">Videos</a></li>
+                    </ul>
+                  </div>
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item text-white">
+                    <a class="nav-link" href="../pag/naturaleza.html">SAN FRANCISCO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pag/Campillin.html">CAMPILLIN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">PARQUE OESTE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">NARANCO</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search">
+                  <button class="btn btn-primary" type="button">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+
+        <!--
+        <div class="col-1">
+            <a class="navbar-bran" href="#"><img src="img/logo.png" class="img-fluid mt-2"></a>
+        </div>
+      
+
+            menu bootstrap 5 nuevo pero sin boton
+            <div class="col-11 my-2">
+                <div class="btn-group mx-1">
+                    <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown">Descubre</button>
+                    <div class="dropdown-menu">
+                       
+                        <a href="pag/pagina2.html" class="dropdown-item text-dark">Naturaleza</a>
+                        <a href="pag/pagina3.html" class="dropdown-item text-dark">Cultura</a>
+                        <button class="dropdown-item">Gastronomía</button>
+                        <button class="dropdown-item">Costas y Pueblos Marineros</button>
+                        <button class="dropdown-item">Ciudades de Asturias</button>
+                        <button class="dropdown-item">Turismo Rural</button>
+                    </div>
+                </div>
+
+                <!--para añadir submenus a cada menu
+                <div class="btn-group mx-1">
+                    <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown">Organiza tu viaje</button>
+                    <div class="dropdown-menu">
+                      
+                    </div>
+                </div>
+                <div class="btn-group mx-1">
+                    <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown">Agenda</button>
+                    <div class="dropdown-menu">
+                      
+                    </div>
+                </div>
+                <div class="btn-group mx-1">
+                    <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown">Blog</button>
+                    <div class="dropdown-menu">
+                      
+                    </div>
+                </div>
+               
+                <button type="button " class="btn text-white mx-1 ">Organiza tu viaje</button>
+                <button type="button " class="btn text-white mx-1 ">Agenda</button>
+                <button type="button " class="btn text-white mx-1 ">Blog</button>
+                <button type="button" class="btn text-white mx-1">Profesionales</button>
+            </div>
+            
+        -->
+
+
+
+<!-- antiguo de referencia
+            <div class="btn-group mx-1">
+                <button type="button" class="btn dropdown-toggle text-white float-left" data-toggle="dropdown">Descubre</button>
+                <div class="dropdown-menu">
+                    <button type="button" class="dropdown-item"><a href="pag/pagina2.html" class="text-dark">Naturaleza</a></button>
+                    <button type="button" class="dropdown-item"><a href="pag/pagina3.html" class="text-dark">Cultura</a></button>
+                    <button type="button" class="dropdown-item">Gastronomía</button>
+                    <button type="button" class="dropdown-item">Costas y Pueblos Marineros</button>
+                    <button type="button" class="dropdown-item">Ciudades de Asturias</button>
+                    <button type="button" class="dropdown-item">Turismo Rural</button>
+                </div>
+            </div>
+
+            <button type="button float-left" class="btn text-white mx-1 dropdown-toggle">Organiza tu viaje</button>
+            <button type="button float-left" class="btn text-white mx-1 dropdown-toggle">Agenda</button>
+            <button type="button float-left" class="btn text-white mx-1 dropdown-toggle">Blog</button>
+            <button type="button float-left" class="btn text-white mx-1">Profesionales</button>
+-->
+
+         
+    </div>
+</div>
+<div class="container-fluid">    
+
+    <div class="slider">
+
+
+        <div class="list">
+
+            <div class="item">
+                <a href="#">  <img src="../img/imageSlide/IMG_5284.jpg" alt=""></a>
+               
+
+                <div class="content">
+                    <div class="title">PARQUE DE INVIERNO</div>
+                    <div class="type">DEPORTE</div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../img/imageSlide/Caballo-alado.jpg" alt="">
+
+                <div class="content">
+                    <div class="title">PURIFICACION TOMÁS</div>
+                    <div class="type">NATURALEZA</div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../img/imageSlide/Mafalda.jpg" alt="">
+
+                <div class="content">
+                    <div class="title">PARQUE SAN FRANCISCO</div>
+                    <div class="type">PULMÓN CIUDAD</div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../img/imageSlide/Jardin-botanico.jpg" alt="">
+
+                <div class="content">
+                    <div class="title">NARANCO</div>
+                    <div class="type">MONTAÑA CIUDAD</div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="thumbnail">
+
+            <div class="item">
+                <img src="../img/imageSlide/IMG_5284.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="../img/imageSlide/Caballo-alado.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="../img/imageSlide/Jardin-botanico.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="../img/imageSlide/Mafalda.jpg" alt="">
+            </div>
+
+        </div>
+
+
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="container my-2">
+    <div class="row p-4 d-none d-md-block">
+       
+    </div>
+    <div class="row">
+        <div class="col-md-6 p-4">
+            <h2 class="text-success mb-3 display-3 mb-4 text-center">Vuelve al Paraíso</h2>
+            <p class="text-justify d-md-none">Por tierra, mar y aire. No importa la puerta de entrada. La visión orgullosa de la escarpada Cordillera Cantábrica, 
+                del perfil ondulante de sus verdes valles y del abrupto perfil de su costa que cae al Cantábrico, un mar de intenso 
+                azul, cautiva antes incluso de poner un pie en Asturias. Es solo un aperitivo de una experiencia para la que se 
+                necesitan los cinco sentidos. Sin ellos no se puede saborear su gastronomía, deslumbrarse con la arquitectura, 
+                respirar su naturaleza, escuchar el latido de su corazón urbano o disfrutar la hospitalidad.</p>
+            <p class="text-justify fs-5 d-none d-md-block">Por tierra, mar y aire. No importa la puerta de entrada. La visión orgullosa de la escarpada Cordillera Cantábrica, 
+                del perfil ondulante de sus verdes valles y del abrupto perfil de su costa que cae al Cantábrico, un mar de intenso 
+                azul, cautiva antes incluso de poner un pie en Asturias. Es solo un aperitivo de una experiencia para la que se 
+                necesitan los cinco sentidos. Sin ellos no se puede saborear su gastronomía, deslumbrarse con la arquitectura, 
+                respirar su naturaleza, escuchar el latido de su corazón urbano o disfrutar la hospitalidad.</p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5  border-top border-bottom border-success border-2 p-4 ">
+           
+            <p class="text-success fst-italic lead text-center display-6">Asturias es honesta, auténtica, vital, respetuosa con el pasado y con el presente, servicial, valiente, acogedora, moderna y cosmopolita.</p>
+           
+        </div>
+    </div>
+   
+   
+    <!--zona dos imagenes largas-->
+    <div class="row mt-4">
+        <img src="../img/covid 19.jpg" class="my-4 img-fluid imagenCovid img-thumbnail " alt="">
+        
+    </div>
+
+    <div class="row mt-4">
+        
+        <div class="col-md-1"></div>
+        <div class="col-md-5  border-top border-bottom border-warning border-2 p-4 ">
+           
+            <p class="text-warning fst-italic lead text-center display-6">Bienestar es salud, auténtica, vital, respetuosa con el pasado y con el presente, servicial, valiente, acogedora, moderna y cosmopolita.</p>
+           
+        </div>
+
+        <div class="col-md-6 p-4">
+            <h2 class="text-warning mb-3 display-3 mb-4 text-center">Bienestar es salud</h2>
+            <p class="text-justify d-md-none">Por tierra, mar y aire. No importa la puerta de entrada. La visión orgullosa de la escarpada Cordillera Cantábrica, 
+                del perfil ondulante de sus verdes valles y del abrupto perfil de su costa que cae al Cantábrico, un mar de intenso 
+                azul, cautiva antes incluso de poner un pie en Asturias. Es solo un aperitivo de una experiencia para la que se 
+                necesitan los cinco sentidos. Sin ellos no se puede saborear su gastronomía, deslumbrarse con la arquitectura, 
+                respirar su naturaleza, escuchar el latido de su corazón urbano o disfrutar la hospitalidad.</p>
+            <p class="text-justify fs-5 d-none d-md-block">Por tierra, mar y aire. No importa la puerta de entrada. La visión orgullosa de la escarpada Cordillera Cantábrica, 
+                del perfil ondulante de sus verdes valles y del abrupto perfil de su costa que cae al Cantábrico, un mar de intenso 
+                azul, cautiva antes incluso de poner un pie en Asturias. Es solo un aperitivo de una experiencia para la que se 
+                necesitan los cinco sentidos. Sin ellos no se puede saborear su gastronomía, deslumbrarse con la arquitectura, 
+                respirar su naturaleza, escuchar el latido de su corazón urbano o disfrutar la hospitalidad.</p>
+        </div>
+    </div>
+    <div class="row">
+        <img src="../img/bienestar.jpg" class="my-4 d-none d-md-block img-fluid imagenBienestar img-thumbnail" alt="">
+        <!--imagenBienestar está sin nada todavía-->
+    </div>
+  
+</div>
+
+
+    <script src="../js/appSlide.js"></script>
+</body>
+</html>
